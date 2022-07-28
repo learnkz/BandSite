@@ -1,0 +1,439 @@
+@use './partials/mixins' as *;
+@use './partials/font' as *;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir";
+}
+
+.header {
+    background-color: #323232;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    &__navbar {
+        display: flex;
+        margin-bottom: 0.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 100;
+    }
+}
+
+@include tablet {
+    .header {
+        line-height: 3.5rem;
+        flex-direction: row;
+        &__navbar {
+            flex-direction: row;
+        }
+        &__link {
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+@include desktop {
+    .header {
+        line-height: 4.25rem;
+        flex-direction: row;
+    }
+}
+
+.header__logo {
+    width: 8rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    @include tablet {
+        width: 10rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        width: 13rem;
+    }
+}
+
+.underline {
+    border-bottom: 0.2rem #FFFFFF solid;
+    margin-bottom: -0.5rem;
+    font-weight: bold;
+}
+
+.blur {
+    color: #E1E1E1;
+}
+
+// Hero heading  
+.hero__heading {
+    position: absolute;
+    top: 11rem;
+    left: 1.5rem;
+    color: #FFFFFF;
+    font-family: "Avenir";
+    font-size: 1.5rem;
+    @include tablet {
+        top: 22rem;
+        left: 2.5rem;
+        font-size: 4rem;
+    }
+    @include desktop {
+        left: 10rem;
+        top: 24rem;
+        font-size: 4.5rem;
+    }
+}
+
+.hero_image {
+    background-image: linear-gradient(#32323250, #32323250), url(../assets/Images/hero-bio.jpg);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 25vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    @include tablet {
+        height: 50vh;
+    }
+    // @include desktop {
+    //     height: 50vh;
+    // }
+}
+
+// about the musicians
+.about {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1.5rem;
+    @include tablet {
+        font-size: 2rem;
+        margin-left: 5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
+}
+
+.bandimage {
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    @include tablet {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+.about__subheading {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+    font-weight: 700;
+    font-size: small;
+    @include tablet {
+        margin-left: 8rem;
+        margin-right: 15rem;
+        font-size: 0.9rem;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        margin-right: 24rem;
+        font-size: 1.5rem;
+    }
+}
+
+.about__subheading2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: justify;
+    font-weight: 700;
+    font-size: small;
+    @include tablet {
+        margin-left: 8rem;
+        margin-right: 15rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 1.2rem;
+    }
+}
+
+.about__title {
+    font-weight: 400;
+    font-style: demi;
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-align: left;
+    @include tablet {
+        margin-left: 8rem;
+        margin-right: 15rem;
+        font-weight: 500;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-weight: 700;
+    }
+}
+
+.about__description {
+    font-weight: 400;
+    font-style: demi;
+    font-size: 0.8rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: -1rem;
+    text-align: left;
+    @include tablet {
+        display: flex;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        justify-content: space-around;
+    }
+    @include desktop {
+        // display: flex;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        font-size: 1.02rem;
+    }
+}
+
+// Photo Gallery
+.gallery {
+    background-color: #E1E1E120;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    @include tablet {
+        font-size: 2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-top: 2.5rem;
+        font-weight: 600;
+    }
+    &__image {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        width: 100%;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        &__list {
+            @include tablet {
+                width: 30%;
+            }
+        }
+    }
+}
+
+// footer 
+footer {
+    background-color: #323232;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    @include tablet {
+        padding: 1.5;
+    }
+    @include desktop {
+        padding: 0;
+    }
+}
+
+.footer {
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.footer__section3 {
+    @include tablet {
+        margin-top: 4.5rem;
+        position: relative;
+        margin-left: 0.5rem;
+        margin-right: 5rem;
+    }
+    @include desktop {
+        margin-top: 7rem;
+        margin-left: 3.5rem;
+    }
+}
+
+.footer__section4 {
+    @include tablet {
+        margin-top: 4.5rem;
+        position: relative;
+        margin-left: -3rem;
+    }
+    @include desktop {
+        margin-top: 7rem;
+        margin-left: -2rem;
+    }
+}
+
+.footer__section5 {
+    @include tablet {
+        margin-top: 4.5rem;
+        position: relative;
+    }
+    @include desktop {
+        margin-top: 7rem;
+    }
+}
+
+.footer__section1 {
+    @include tablet {
+        position: absolute;
+        display: flex;
+        align-items: baseline;
+        left: 10rem;
+    }
+}
+
+.footer__section2 {
+    @include tablet {
+        position: absolute;
+        align-self: flex-start;
+        right: 5rem;
+    }
+}
+
+.icon {
+    padding: 0.8rem;
+    margin-left: -0.5rem;
+    @include tablet {
+        margin: 0.5rem;
+    }
+}
+
+.getintouch {
+    font-size: 2rem;
+    @include tablet {
+        font-size: 2rem;
+        margin-right: 1rem;
+        margin-left: -7.5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+        margin-right: 2rem;
+        margin-left: -5rem;
+    }
+}
+
+.Name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    @include tablet {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+}
+
+.subname {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: -1rem;
+    @include tablet {
+        font-size: 0.8rem;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+.details {
+    margin-bottom: -1rem;
+    font-size: 1rem;
+    font-weight: 300;
+    @include tablet {
+        margin-bottom: -1rem;
+        font-size: 0.8rem;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+        margin-bottom: -1.5rem;
+    }
+}
+
+.email {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    @include tablet {
+        margin-top: 2.5rem;
+        font-size: 1rem;
+    }
+    @include desktop {
+        margin-top: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+.header__logo2 {
+    width: 8rem;
+    margin-top: 5rem;
+    @include tablet {
+        width: 8rem;
+        margin-top: 3rem;
+        margin-right: -1.5rem;
+    }
+    @include desktop {
+        width: 10rem;
+    }
+}
+
+.copyright {
+    font-size: 0.7rem;
+    font-weight: 100;
+    @include tablet {
+        font-size: 1rem;
+        margin-left: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+    @include desktop {
+        font-size: 1.5rem;
+        margin-left: 5rem;
+    }
+}
