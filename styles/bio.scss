@@ -13,6 +13,7 @@ body {
     font-family: "Avenir";
 }
 
+// Header & Navbar
 .header {
     background-color: #323232;
     font-size: 1.3rem;
@@ -116,9 +117,6 @@ body {
     @include tablet {
         height: 50vh;
     }
-    // @include desktop {
-    //     height: 50vh;
-    // }
 }
 
 // about the musicians
@@ -232,12 +230,8 @@ body {
 .gallery {
     background-color: #E1E1E120;
     padding: 1rem;
-    font-size: 1.5rem;
     font-weight: 500;
     @include tablet {
-        font-size: 2rem;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
         padding-top: 2.5rem;
         font-weight: 600;
     }
@@ -261,32 +255,35 @@ body {
     }
 }
 
+.gallery__heading {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    @include tablet {
+        font-size: 3rem;
+        margin-left: 2rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
 // footer 
 footer {
     background-color: #323232;
     color: #FFFFFF;
     padding: 1.5rem;
-    @include tablet {
-        padding: 1.5;
-    }
-    @include desktop {
-        padding: 0;
-    }
 }
 
 .footer {
     @include tablet {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
 
 .footer__section3 {
     @include tablet {
         margin-top: 4.5rem;
-        position: relative;
-        margin-left: 0.5rem;
-        margin-right: 5rem;
+        margin-left: 1rem;
     }
     @include desktop {
         margin-top: 7rem;
@@ -297,22 +294,20 @@ footer {
 .footer__section4 {
     @include tablet {
         margin-top: 4.5rem;
-        position: relative;
-        margin-left: -3rem;
     }
     @include desktop {
         margin-top: 7rem;
-        margin-left: -2rem;
     }
 }
 
 .footer__section5 {
     @include tablet {
         margin-top: 4.5rem;
-        position: relative;
+        padding-right: 1.5rem;
     }
     @include desktop {
         margin-top: 7rem;
+        padding-right: 3rem;
     }
 }
 
@@ -321,7 +316,6 @@ footer {
         position: absolute;
         display: flex;
         align-items: baseline;
-        left: 10rem;
     }
 }
 
@@ -344,14 +338,11 @@ footer {
 .getintouch {
     font-size: 2rem;
     @include tablet {
-        font-size: 2rem;
-        margin-right: 1rem;
-        margin-left: -7.5rem;
+        margin-left: 1rem;
     }
     @include desktop {
         font-size: 3rem;
-        margin-right: 2rem;
-        margin-left: -5rem;
+        margin-left: 3rem;
     }
 }
 
@@ -362,7 +353,6 @@ footer {
     margin-top: 2rem;
     @include tablet {
         font-size: 0.8rem;
-        margin-bottom: 1rem;
     }
     @include desktop {
         font-size: 1.5rem;
@@ -434,6 +424,6 @@ footer {
     }
     @include desktop {
         font-size: 1.5rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 }

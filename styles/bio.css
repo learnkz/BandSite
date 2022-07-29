@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("../assets/Font/AvenirNextLTPro-Bold.otf") format("woff"), url("../assets/Font/AvenirNextLTPro-Bold.otf") format("woff2"), url("../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
   font-style: bold;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("../assets/Font/AvenirNextLTPro-Demi.otf") format("woff"), url("../assets/Font/AvenirNextLTPro-Demi.otf") format("woff2"), url("../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
   font-style: demi;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("../assets/Font/AvenirNextLTPro-Regular.otf") format("woff"), url("../assets/Font/AvenirNextLTPro-Regular.otf") format("woff2"), url("../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
   font-style: regular;
 }
 *,
@@ -270,14 +270,10 @@ body {
 .gallery {
   background-color: rgba(225, 225, 225, 0.1254901961);
   padding: 1rem;
-  font-size: 1.5rem;
   font-weight: 500;
 }
 @media (min-width: 768px) {
   .gallery {
-    font-size: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     padding-top: 2.5rem;
     font-weight: 600;
   }
@@ -303,35 +299,36 @@ body {
   }
 }
 
+.gallery__heading {
+  margin-left: 1.5rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .gallery__heading {
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
 footer {
   background-color: #323232;
   color: #FFFFFF;
   padding: 1.5rem;
 }
-@media (min-width: 768px) {
-  footer {
-    padding: 1.5;
-  }
-}
-@media (min-width: 1280px) {
-  footer {
-    padding: 0;
-  }
-}
 
 @media (min-width: 768px) {
   .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 768px) {
   .footer__section3 {
     margin-top: 4.5rem;
-    position: relative;
-    margin-left: 0.5rem;
-    margin-right: 5rem;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 1280px) {
@@ -344,26 +341,24 @@ footer {
 @media (min-width: 768px) {
   .footer__section4 {
     margin-top: 4.5rem;
-    position: relative;
-    margin-left: -3rem;
   }
 }
 @media (min-width: 1280px) {
   .footer__section4 {
     margin-top: 7rem;
-    margin-left: -2rem;
   }
 }
 
 @media (min-width: 768px) {
   .footer__section5 {
     margin-top: 4.5rem;
-    position: relative;
+    padding-right: 1.5rem;
   }
 }
 @media (min-width: 1280px) {
   .footer__section5 {
     margin-top: 7rem;
+    padding-right: 3rem;
   }
 }
 
@@ -372,7 +367,6 @@ footer {
     position: absolute;
     display: flex;
     align-items: baseline;
-    left: 10rem;
   }
 }
 
@@ -399,16 +393,13 @@ footer {
 }
 @media (min-width: 768px) {
   .getintouch {
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-left: -7.5rem;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 1280px) {
   .getintouch {
     font-size: 3rem;
-    margin-right: 2rem;
-    margin-left: -5rem;
+    margin-left: 3rem;
   }
 }
 
@@ -421,7 +412,6 @@ footer {
 @media (min-width: 768px) {
   .Name {
     font-size: 0.8rem;
-    margin-bottom: 1rem;
   }
 }
 @media (min-width: 1280px) {
@@ -515,6 +505,6 @@ footer {
 @media (min-width: 1280px) {
   .copyright {
     font-size: 1.5rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 }/*# sourceMappingURL=bio.css.map */
