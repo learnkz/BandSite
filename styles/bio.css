@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("woff"), url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("woff2"), url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("opentype");
   font-style: bold;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
+  src: url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("woff"), url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("woff2"), url("../../assets/Font/AvenirNextLTPro-Demi.otf") format("opentype");
   font-style: demi;
 }
 @font-face {
   font-family: "Avenir";
-  src: url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("woff"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("woff2"), url("../Kajal-Zankat-bandsite/assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("woff"), url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("woff2"), url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("opentype");
   font-style: regular;
 }
 *,
@@ -278,7 +278,6 @@ body {
     font-size: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-top: 2.5rem;
     font-weight: 600;
   }
 }
@@ -303,218 +302,165 @@ body {
   }
 }
 
+.gallery__heading {
+  margin-left: 2.5rem;
+}
+
 footer {
   background-color: #323232;
   color: #FFFFFF;
-  padding: 1.5rem;
-}
-@media (min-width: 768px) {
-  footer {
-    padding: 1.5;
-  }
-}
-@media (min-width: 1280px) {
-  footer {
-    padding: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-    justify-content: space-around;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer__section3 {
-    margin-top: 4.5rem;
-    position: relative;
-    margin-left: 0.5rem;
-    margin-right: 5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .footer__section3 {
-    margin-top: 7rem;
-    margin-left: 3.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer__section4 {
-    margin-top: 4.5rem;
-    position: relative;
-    margin-left: -3rem;
-  }
-}
-@media (min-width: 1280px) {
-  .footer__section4 {
-    margin-top: 7rem;
-    margin-left: -2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .footer__section5 {
-    margin-top: 4.5rem;
-    position: relative;
-  }
-}
-@media (min-width: 1280px) {
-  .footer__section5 {
-    margin-top: 7rem;
-  }
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
   .footer__section1 {
-    position: absolute;
     display: flex;
-    align-items: baseline;
-    left: 10rem;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: 768px) {
-  .footer__section2 {
-    position: absolute;
-    align-self: flex-start;
-    right: 5rem;
+  .footer__section1--getintouch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__section1--getintouch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.5rem;
   }
 }
 
 .icon {
-  padding: 0.8rem;
-  margin-left: -0.5rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  display: inline;
 }
 @media (min-width: 768px) {
   .icon {
-    margin: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 1.5rem;
+    align-items: flex-start;
+    padding-top: 0;
   }
 }
 
 .getintouch {
   font-size: 2rem;
+  padding-bottom: 1rem;
 }
 @media (min-width: 768px) {
   .getintouch {
-    font-size: 2rem;
-    margin-right: 1rem;
-    margin-left: -7.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .getintouch {
-    font-size: 3rem;
-    margin-right: 2rem;
-    margin-left: -5rem;
-  }
-}
-
-.Name {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-}
-@media (min-width: 768px) {
-  .Name {
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-  }
-}
-@media (min-width: 1280px) {
-  .Name {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-}
-
-.subname {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: -1rem;
-}
-@media (min-width: 768px) {
-  .subname {
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1280px) {
-  .subname {
-    font-size: 1.5rem;
-  }
-}
-
-.details {
-  margin-bottom: -1rem;
-  font-size: 1rem;
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  .details {
-    margin-bottom: -1rem;
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 1280px) {
-  .details {
-    font-size: 1.5rem;
-    margin-bottom: -1.5rem;
-  }
-}
-
-.email {
-  margin-top: 2.5rem;
-  font-size: 1rem;
-  font-weight: 300;
-}
-@media (min-width: 768px) {
-  .email {
-    margin-top: 2.5rem;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 1280px) {
-  .email {
-    margin-top: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
 .header__logo2 {
-  width: 8rem;
-  margin-top: 5rem;
+  display: none;
 }
 @media (min-width: 768px) {
   .header__logo2 {
-    width: 8rem;
-    margin-top: 3rem;
-    margin-right: -1.5rem;
+    display: flex;
+  }
+}
+
+.header__logo3 {
+  display: flex;
+  margin-top: 4rem;
+}
+@media (min-width: 768px) {
+  .header__logo3 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__section2 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__card {
+    margin-right: 2rem;
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1280px) {
-  .header__logo2 {
-    width: 10rem;
+  .footer__card {
+    margin-right: 4rem;
+  }
+}
+
+.name {
+  padding-top: 1.5rem;
+  margin: 0;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .name {
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+.subname {
+  padding-bottom: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+}
+@media (min-width: 768px) {
+  .subname {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+}
+
+.details {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .details {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.email {
+  padding-top: 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .email {
+    padding-top: 1rem;
+    margin: 0;
   }
 }
 
 .copyright {
-  font-size: 0.7rem;
-  font-weight: 100;
+  padding-top: 1rem;
+  margin: 0;
+  font-size: 0.6rem;
 }
 @media (min-width: 768px) {
   .copyright {
+    padding: 0;
+    margin: 0;
+    padding-top: 2rem;
     font-size: 1rem;
-    margin-left: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 1280px) {
-  .copyright {
-    font-size: 1.5rem;
-    margin-left: 5rem;
   }
 }/*# sourceMappingURL=bio.css.map */
