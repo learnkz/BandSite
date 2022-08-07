@@ -1,0 +1,422 @@
+@use './partials/mixins' as *;
+@use './partials/font' as *;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Avenir";
+}
+
+.header {
+    background-color: #323232;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    &__navbar {
+        display: flex;
+        margin-bottom: 0.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: #FFFFFF;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 100;
+    }
+}
+
+@include tablet {
+    .header {
+        line-height: 3.5rem;
+        flex-direction: row;
+        &__navbar {
+            flex-direction: row;
+        }
+        &__link {
+            padding-bottom: 0.5rem;
+        }
+    }
+}
+
+@include desktop {
+    .header {
+        line-height: 4.25rem;
+        flex-direction: row;
+    }
+}
+
+.header__logo {
+    width: 8rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+    @include tablet {
+        width: 10rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    @include desktop {
+        margin-left: 10rem;
+        width: 13rem;
+    }
+}
+
+.underline {
+    border-bottom: 0.2rem #FFFFFF solid;
+    margin-bottom: -0.5rem;
+    font-weight: bold;
+}
+
+.blur {
+    color: #E1E1E1;
+}
+
+// hero section 
+.hero__heading {
+    color: #FFFFFF;
+    font-family: "Avenir";
+    font-size: 1rem;
+    padding-left: 2rem;
+    margin-top: 0rem;
+    @include tablet {
+        margin-top: 4rem;
+        font-size: 2rem;
+        align-items: flex-start;
+        font-weight: 700;
+    }
+    @include desktop {
+        margin-top: 10rem;
+        margin-left: 5rem;
+    }
+}
+
+.hero__heading2 {
+    color: #FFFFFF;
+    font-family: "Avenir";
+    font-size: 1.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: bolder;
+    @include tablet {
+        margin-top: 0rem;
+        font-size: 3.5rem;
+        padding-right: 15rem;
+    }
+    @include desktop {
+        margin-left: 5rem;
+        font-size: 4.5rem;
+        font-weight: bolder;
+        padding-right: 3rem;
+    }
+}
+
+.hero_image {
+    background-image: linear-gradient(#32323250, #32323250), url(../assets/Images/hero-shows.jpg);
+    // display: flex;
+    align-items: start;
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    padding-top: 2rem;
+    @include tablet {
+        height: 42vh;
+        padding-bottom: 2rem;
+    }
+    @include desktop {
+        height: 40vh;
+    }
+}
+
+iframe {
+    width: 80%;
+    height: 40%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    border: #FFFFFF 6px solid;
+    border-radius: 0.5rem;
+    @include tablet {
+        width: 50%;
+        height: 20%;
+    }
+    @include desktop {
+        width: 60%;
+        height: 50%;
+        margin-right: 5rem;
+    }
+}
+
+.hero__heading-flex {
+    @include desktop {
+        display: flex;
+        justify-content: flex-start;
+        margin: 0rem;
+    }
+}
+
+// shows 
+.showssection {
+    margin: 1.5rem;
+    @include desktop {
+        display: flex;
+    }
+}
+
+.headingshows {
+    font-size: 3rem;
+}
+
+.heading {
+    position: static;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #AFAFAF;
+    @include tablet {
+        display: flex;
+        position: relative;
+    }
+    @include desktop {
+        display: flex;
+    }
+}
+
+.shows {
+    @include desktop {
+        margin-left: 5rem;
+        padding-top: 2.5rem;
+        width: 80%;
+    }
+}
+
+.date {
+    display: none;
+    @include tablet {
+        display: flex;
+        margin-right: 1.5rem;
+    }
+    @include desktop {
+        margin-right: 0rem;
+    }
+}
+
+.venue {
+    display: none;
+    @include tablet {
+        display: flex;
+        margin-right: 0rem;
+    }
+    @include desktop {
+        margin-right: 0rem;
+    }
+}
+
+.location {
+    display: none;
+    @include tablet {
+        display: flex;
+        margin-left: 0rem;
+    }
+    @include desktop {
+        margin-right: 0rem;
+    }
+}
+
+.none {
+    display: none;
+    color: #FFFFFF;
+    @include tablet {
+        display: flex;
+    }
+}
+
+.mainrow {
+    border-bottom: #E1E1E1 1px solid;
+    padding-bottom: 1rem;
+    @include tablet {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    @include desktop {
+        justify-content: space-between;
+    }
+}
+
+.mainrow:hover {
+    background-color: #E1E1E1;
+}
+
+.row1 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.row {
+    font-size: 0.9rem;
+    @include desktop {}
+}
+
+.button {
+    background-color: #323232;
+    color: #FFFFFF;
+    width: 90%;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    @include tablet {
+        width: 10rem;
+        height: 2.5rem;
+        margin-top: 1rem;
+    }
+    @include desktop {}
+}
+
+// footer
+footer {
+    background-color: #323232;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.footer__section1 {
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer__section1--getintouch {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+}
+
+.icon {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    display: inline;
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 1.5rem;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+}
+
+.getintouch {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    @include tablet {
+        font-size: 2.5rem;
+    }
+}
+
+.header__logo2 {
+    display: none;
+    @include tablet {
+        display: flex;
+    }
+}
+
+.header__logo3 {
+    display: flex;
+    margin-top: 4rem;
+    @include tablet {
+        display: none;
+    }
+}
+
+.footer__section2 {
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+}
+
+.footer__card {
+    @include tablet {
+        margin-right: 2rem;
+        font-size: 0.9rem;
+    }
+    @include desktop {
+        margin-right: 4rem;
+    }
+}
+
+.name {
+    padding-top: 1.5rem;
+    margin: 0;
+    font-size: 1.1rem;
+    @include tablet {
+        padding-top: 1rem;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+}
+
+.subname {
+    padding-bottom: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+    @include tablet {
+        padding-bottom: 1rem;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+}
+
+.details {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    @include tablet {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.email {
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 0.9rem;
+    @include tablet {
+        padding-top: 1rem;
+        margin: 0;
+    }
+}
+
+.copyright {
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 0.6rem;
+    @include tablet {
+        padding: 0;
+        margin: 0;
+        padding-top: 2rem;
+        font-size: 1rem;
+    }
+}

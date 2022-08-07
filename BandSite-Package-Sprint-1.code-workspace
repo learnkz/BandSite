@@ -1,0 +1,13 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../BandSite-Package-Sprint-2"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "BandSite-Package-Sprint-2"
+    }
+}

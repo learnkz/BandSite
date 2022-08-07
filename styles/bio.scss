@@ -265,6 +265,154 @@ body {
     margin-left: 2.5rem;
 }
 
+// Comment section 
+.post-heading {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-left: 2rem;
+    @include tablet {
+        font-size: 3rem;
+    }
+}
+
+.pic {
+    border-radius: 50%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    @include tablet {
+        margin-left: 5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-top: 1rem;
+    }
+    @include desktop {
+        margin-left: 20rem;
+    }
+}
+
+.comment-boxes {
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+    margin-top: -5rem;
+    @include desktop {
+        margin-left: 22rem;
+    }
+}
+
+.post-title {
+    color: #AFAFAF;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    @include tablet {
+        margin-left: 5rem;
+        font-size: 1.3rem;
+        margin-top: 0rem;
+    }
+}
+
+.input-box--name {
+    background-color: #E1E1E150;
+    border-radius: 10px 10px 10px 10px;
+    width: 13rem;
+    height: 2.5rem;
+    border: #AFAFAF50 solid;
+    padding-left: 1rem;
+    font-size: 1rem;
+    @include tablet {
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+        width: 32rem;
+        height: 4rem;
+    }
+}
+
+.input-box--comment {
+    background-color: #E1E1E150;
+    border-radius: 10px 10px 10px 10px;
+    width: 13rem;
+    height: 8rem;
+    border: #AFAFAF50 solid;
+    padding-left: 1rem;
+    font-size: 1rem;
+    @include tablet {
+        margin-left: 4rem;
+        margin-bottom: 1rem;
+        width: 32rem;
+        height: 10rem;
+    }
+}
+
+.comment-button {
+    background-color: #323232;
+    border-radius: 10px 10px 10px 10px;
+    width: 13rem;
+    height: 3rem;
+    border: #323232 solid;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    @include tablet {
+        margin-left: 24rem;
+        margin-bottom: 1rem;
+        width: 12rem;
+        height: 3rem;
+        border-bottom: #AFAFAF50 solid 1px;
+        padding-bottom: 2rem;
+    }
+}
+
+.comment-section {
+    margin-left: 1rem;
+}
+
+.comment-title {
+    font-size: 1rem;
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+.comment-post {
+    margin-left: 1rem;
+    font-size: 1rem;
+    @include desktop {
+        margin-left: 25rem;
+        margin-right: 21rem;
+        font-size: 2rem;
+    }
+}
+
+.comment-date {
+    margin-left: 8.5rem;
+    margin-top: -2rem;
+    margin-bottom: 0rem;
+    color: #AFAFAF;
+    font-size: 1rem;
+    @include desktop {
+        margin-left: 25rem;
+        font-size: 1.5rem;
+        margin-top: -3rem;
+    }
+}
+
+.comment-paragraph {
+    text-align: left;
+    font-size: 0.8rem;
+    border-bottom: #AFAFAF50 solid 1px;
+    padding-bottom: 2rem;
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
 // footer
 footer {
     background-color: #323232;

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <title>Biography</title>
     <link rel="stylesheet" href="./styles/bio.css">
+    <script src="./scripts/index-page.js" defer></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             </a>
             <nav class="header__navbar">
                 <a class="header__link underline" href="./index.html">Biography</a>
-                <a class="header__link blur" href="#">Shows</a>
+                <a class="header__link blur" href="./pages/shows.html">Shows</a>
             </nav>
         </div>
     </header>
@@ -72,6 +73,29 @@
             </div>
         </div>
     </section>
+
+
+    <!-- comment section-->
+
+    <h2 class="post-heading"> Join the Conversation</h2>
+    <div id="comment-section">
+        <a><img class="pic" src="assets/Images/Mohan-muruge.jpg"></a>
+        <form class="comment-boxes" onsubmit="return false">
+
+            <label class="post-title">NAME</label><br>
+            <textarea class="input-box--name" type="text" id="enter-your-name" placeholder="Enter your name"></textarea>
+            <br>
+
+            <lable class="post-title">COMMENT</lable><br>
+            <textarea class="input-box--comment" type="text" id="enter-your-comment" placeholder="Add a new comment"></textarea>
+            <br>
+
+            <button class="comment-button" id="new-comment-button"> COMMENT</button>
+
+        </form>
+    </div>
+
+
 
 
     <!--footer-->
